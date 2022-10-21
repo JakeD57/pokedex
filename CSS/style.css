@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+/*-------------------*/
+/* CUSTOM SCROLL BAR
+/*---------------------*/
+
+
+::-webkit-scrollbar {
+    width: 0.8em;
+    background: #f7f7f7;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #E8D00C;
+      border-radius: 100vw;
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+      border: 2px solid black;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #1f1f1f;
+      border-radius: 100vw;
+      border: 0.85px solid #1f1f1f;
+      
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3b3b3b;
+      
+    }
+
+
+
+/*------------------------------*/
+/*STYLING SCROLL TO TOP BUTTON
+/*------------------------------*/
+
+.to-top {
+    background: #000000;
+    outline: 2px solid #d3be12;
+    outline-offset: -4px;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 0px #242424;
+  }
+
+  .to-top:hover {
+    transform: scale(0.85);
+
+  }
+
+  
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
+
+  .fa-chevron-up:before {
+    content: "\f077";
+    color: #ffffff;
+}
+
+
+/*----------------*/
+/*GENERIC STYLING
+/*----------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FAF5CC;
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------------------------*/
+/*STYLING MAIN POKE CONTAINER
+/*------------------------------*/
+
+.poke-container {
+    background: #FAF5CC;
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*------------------------------*/
+/*STYLING THE MAIN HEADING
+/*------------------------------*/
+
+.poke-heading {
+    font-size: 40px;
+    color: #202020;
+    font-family: 'Nunito', sans-serif;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+}
+
+.poke-heading::after {
+    display: block;
+    height: 5px;
+    background-color: #202020;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+.poke-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin-bottom: 3em;
+}
+
+.poke-card-green {
+    width: 275px;
+    height: 439px;
+    background: #DCFFEF;
+    border: 2px solid #000000;
+    box-shadow: 9px 9px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke-card-pink {
+    width: 275px;
+    height: 439px;
+    background: #ffe4e7;
+    border: 2px solid #000000;
+    box-shadow: 9px 9px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke-card-green-2 {
+    width: 275px;
+    height: 439px;
+    background: #e6ffe0;
+    border: 2px solid #000000;
+    box-shadow: 9px 9px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.poke-card-red {
+    width: 275px;
+    height: 439px;
+    background: #FFEEE2;
+    border: 2px solid #000000;
+    box-shadow: 9px 9px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke-card-blue {
+    width: 275px;
+    height: 439px;
+    background: #E0F9FF;
+    border: 2px solid #000000;
+    box-shadow: 9px 9px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke-card-purple {
+    width: 275px;
+    height: 439px;
+    background: #e9ecff;
+    border: 2px solid #000000;
+    box-shadow: 9px 9px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke-card-brown {
+    width: 275px;
+    height: 439px;
+    background: #fff1e0;
+    border: 2px solid #000000;
+    box-shadow: 9px 9px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke-card-brown-2 {
+    width: 275px;
+    height: 439px;
+    background: #fff7db;
+    border: 2px solid #000000;
+    box-shadow: 9px 9px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke-card-yellow {
+    width: 275px;
+    height: 439px;
+    background: #fff6db;
+    border: 2px solid #000000;
+    box-shadow: 9px 9px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke-card-blue-2 {
+    width: 275px;
+    height: 439px;
+    background: #e7efff;
+    border: 2px solid #000000;
+    box-shadow: 9px 9px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+p.poke-number {
+    font-family: 'Nunito', sans-serif;
+    color: #2f2f2f;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 20px;
+}
+
+p.poke-name {
+    font-family: 'Nunito', sans-serif;
+    color: #000000;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 26px;
+}
+
+img.green-circle {
+    background: #BEE5D4;
+    border-radius: 50%;
+}
+
+img.green-circle-2 {
+    background: #d1e9cb;
+    border-radius: 50%;
+}
+
+img.red-circle {
+    background: #EFDFD3;
+    border-radius: 50%;
+}
+
+img.blue-circle {
+    background: #CFE9EF;
+    border-radius: 50%;
+}
+
+img.purple-circle {
+    background: #d8dbf3;
+    border-radius: 50%;
+}
+
+img.brown-circle {
+    background: #ede0d0;
+    border-radius: 50%;
+}
+
+img.brown-circle-2 {
+    background: #ebe2c2;
+    border-radius: 50%;
+}
+
+img.pink-circle {
+    background: #e9cfd2;
+    border-radius: 50%;
+}
+
+img.yellow-circle {
+    background: #f1e8cf;
+    border-radius: 50%;
+}
+
+img.blue-circle-2 {
+    background: #d8e0f1;
+    border-radius: 50%;
+}
+
+a.poke-green-btn {
+    width: 90px;
+    height: 41px;
+    background: #0DDA67;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #042C15;
+    font-weight: 700;
+}
+
+a.poke-green-btn-2 {
+    width: 90px;
+    height: 41px;
+    background: #34d50d;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #042C15;
+    font-weight: 700;
+}
+
+a.poke-purple-btn {
+    width: 90px;
+    height: 41px;
+    background: #EB0E92;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+a.poke-purple-btn-2 {
+    width: 90px;
+    height: 41px;
+    background: #c000ff;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+a.poke-pink-btn {
+    width: 90px;
+    height: 41px;
+    background: #ed07f1;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+a.poke-pink-btn-2 {
+    width: 90px;
+    height: 41px;
+    background: #f107bf;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+a.poke-red-btn {
+    width: 90px;
+    height: 41px;
+    background: #fd6f09;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+a.poke-blue-btn {
+    width: 90px;
+    height: 41px;
+    background: #0FC3EE;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+a.poke-grey-btn {
+    width: 90px;
+    height: 41px;
+    background: #C9C9C9;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+a.poke-grey-btn-2 {
+    width: 90px;
+    height: 41px;
+    background: #a7a7a7;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+a.poke-yellow-btn {
+    width: 90px;
+    height: 41px;
+    background: #edb408;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+a.poke-yellow-btn-2 {
+    width: 90px;
+    height: 41px;
+    background: #ab9842;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+a.poke-yellow-btn-3 {
+    width: 90px;
+    height: 41px;
+    background: #bf9e08;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+a.poke-orange-btn {
+    width: 90px;
+    height: 41px;
+    background: #c7590c;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+a.poke-silver-btn {
+    width: 90px;
+    height: 41px;
+    background: #7a7a7a;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+a.poke-blue-btn-2 {
+    width: 90px;
+    height: 41px;
+    background: #06ecf7;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+a.poke-blue-btn-3 {
+    width: 90px;
+    height: 41px;
+    background: #067df7;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
