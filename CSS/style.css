@@ -142,8 +142,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3em;
-    margin-bottom: 3em;
+    gap: 2.5em;
+    margin-bottom: 2.5em;
 }
 
 .poke-card-green {
